@@ -29,7 +29,6 @@ jobs:
          run: |
             sudo wget https://github.com/VegaBobo/Bot3/releases/download/v0.1/BoboBot.jar
             
-         
        - name: Generate values
          run: java -jar BoboBot.jar
          
