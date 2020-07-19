@@ -5,7 +5,7 @@ on: [push]
 env:
   BOTUN: S
   BOTKEY: 1
-  USERKEY: 1
+  USERKEY: 12
 jobs:
   build:
     runs-on: ubuntu-latest
