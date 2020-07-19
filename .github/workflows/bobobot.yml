@@ -3,9 +3,9 @@ name: Running bot
 on: [push]
 
 env:
-  BOTUN: ruigsibuilderbot
-  BOTKEY: 1318111607:AAHSQ2qkLwDRUyIo0OpGO9XSratxdWbtb7Y
-  USERKEY: 522458637
+  BOTUN: S
+  BOTKEY: 1
+  USERKEY: 1
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -40,9 +40,9 @@ jobs:
              touch config.prop
              echo "#Bo³+t config file" >> "config.prop"
              echo "#Fri Jun 26 06:08:12 UTC 2020" >> "config.prop"
-             echo "bot-username=$BOTUN" >> "config.prop"
-             echo "bot-token=$BOTKEY" >> "config.prop"
-             echo "bot-master=$USERKEY" >> "config.prop"
+             echo "bot-username=ruigsibuilderbot" >> "config.prop"
+             echo "bot-token=${{ secrets.TOKEN }}" >> "config.prop"
+             echo "bot-master=${{ secrets.CHAT_ID }} " >> "config.prop"
              
        - name: Run bobobot
          run: sudo java -jar BoboBot.jar
