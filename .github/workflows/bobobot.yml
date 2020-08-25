@@ -21,7 +21,7 @@ jobs:
             sudo -E apt-get -qq install bc build-essential zip curl libstdc++6 git wget python gcc clang libssl-dev repo rsync flex bison ccache openjdk-8-jdk
        - name: Setup 2
          run: |
-            git clone --recurse-submodules git clone --recurse-submodules https://github.com/JamieHoSzeYui/ErfanGSIs
+            git clone --recurse-submodules https://github.com/qrovic/ErfanGSIs.git
             sudo chmod -R 0777 ErfanGSIs
             sudo bash ErfanGSIs/setup.sh
             
